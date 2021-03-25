@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function toggleField(hideObj,showObj){
+              hideObj.disabled=true;        
+              hideObj.style.display='none';
+              showObj.disabled=false;   
+              showObj.style.display='inline';
+              showObj.focus();
+            }
+        </script>
+    </head>
+    <body>
+        <label>I am a</label>
+        <select name="browser" 
+                      onchange="if(this.options[this.selectedIndex].value=='customOption'){
+                          toggleField(this,this.nextSibling);
+                          this.selectedIndex='0';
+                      }">
+             
+            <option>a design student</option>
+            <option>a self taught designer</option>
+            <option>a design graduate</option>
+            <option>part of a design team</option>
+            <option>leader of a design team</option>
+            <option value="customOption">Add a new entry</option>
+        </select><input name="browser" style="display:none;" disabled="disabled" 
+            onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
+
+        <label>with</label>
+        <select>
+            <option>academic</option>
+            <option>0 to 1 years</option>
+            <option>2 to 4 years</option>
+            <option>5 to 8 years</option>
+            <option>more than 8 years</option>
+            <option>no</option>
+        </select>
+
+        <label>experience, trying to design a</label>
+        <select name="browser" onchange="if(this.options[this.selectedIndex].value=='customOption'){
+                                                                                                    toggleField(this,this.nextSibling);
+                                                                                                    this.selectedIndex='0';
+                                                                                                    }">
+            <option>a creative</option>
+            <option>a campaign</option>
+            <option>a service</option>
+            <option>an experience</option>
+            <option value="customOption"> Add a new entry</option>
+        </select><input name="browser" style="display:none;" disabled="disabled" 
+            onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
+
+
+        <label>but the problem is</label>
+        <textarea rows="10" cols="30" placeholder="write briefly about your problem or a road block.
+        Eg: My client/boss doesn't always understand my creative input
+        for the project" ></textarea>
+
+        <label>which makes me feel</label>
+        <select name="browser" 
+        onchange="if(this.options[this.selectedIndex].value=='customOption'){
+            toggleField(this,this.nextSibling);
+            this.selectedIndex='0';
+        }">
+           
+          <option>under valued</option>
+          <option>less productive</option>
+          <option>confused</option>
+          <option>frustrated</option>
+          <option value="customOption"> Add a new entry</option>
+      </select><input name="browser" style="display:none;" disabled="disabled" 
+          onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
+        
+        <br></br>
+        <input style="width: 410px;" value="How do you want your product to talk to the customer/audience?">
+        <br></br>
+        <input style="width: 410px;" value="What do you want your design to convey to the customer/audience?">
+        
+        <br></br>
+        <br></br>
+    </body>
+    <footer></footer>
+</html>
