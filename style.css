@@ -1,0 +1,116 @@
+#section1-img-1{
+    width: 100%;
+}
+.section-1 h2{
+    background-color: black;
+    color: aliceblue;
+    width: max-content;
+    padding: 1%;
+}
+
+.section-1 h6{
+    font-family: Roboto;
+    font-style: italic;
+    font-size: x-large;
+    text-align: center;
+}
+
+.section-1 input{
+    font-family: Roboto;
+    font-style: italic;
+    font-size: medium;
+    text-align: center;
+    width: 85%;
+    margin: 3% 10%;
+    padding: 3%;
+    background-color: #DBFBF9;
+    border: none;
+}
+
+.section-1 button{
+    margin: 0% 36%;
+    background-color: #FF443B;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 2%;
+    font-weight: bold;
+}
+
+.section-2 p{
+    font-family: Roboto;
+}
+
+.section-2 .col-md-8{
+    margin-top: 5%;
+}
+.section-2{
+    margin-top: 5%;
+}
+
+.section-2 label{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: large;
+}
+
+.section-2 select{
+    background-color: #DEF1EA;
+    border-color: #DEF1EA;
+    padding: 1%;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+    margin: 0% 2%;
+    color: #07303D;
+}
+
+.section-2 textarea{
+    background-color: #DEF1EA;
+    border-color: #DEF1EA;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    margin: 0% 2%;
+    color: #07303D;
+}
+
+.section-2 button{
+    margin: 0% 0% 0% 5% ;
+    background-color: #FF443B;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 2%;
+    font-weight: bold;
+}
+
+.section-3{
+    margin-top: 5%;
+}
+
+.section-3 img{
+    width: 30%; 
+    margin: 4%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+}
+
+
+.section-3 .wrapper{
+    margin-top: 3%;
+}
+
+.section-3 .wrapper p{
+    font-size: x-large;
+    font-family: Roboto;
+    font-style: italic;
+    padding: 5%;
+}
+
